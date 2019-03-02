@@ -1,7 +1,7 @@
 # Linked list cycle
 
 1. 用unordered_set记录访问过的结点地址，后续再进行查询
-
+```c++
     class Solution {
     public:
         bool hasCycle(ListNode *head) {
@@ -15,9 +15,9 @@
             return false;
         }
     };
-
+```
  2. 用龟兔赛跑的形式，一种每次加2指针，一种每次加1指针，判断是否会相遇
-
+```c++
     class Solution { 
     public: 
     		bool hasCycle(ListNode *head) { 
@@ -31,3 +31,4 @@
     				return false; 
     		} 
     };
+```

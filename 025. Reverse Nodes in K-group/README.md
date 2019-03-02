@@ -5,7 +5,7 @@
 首先排除特殊情况，!head,!head→next,k<2。
 
 然后建立链表头节点prehead，利用front和back双指针开始循环，首先将back循环到长度为k的子链表尾部，以此确定下次逆转的子链表的起始位置，然后开始逆序。利用新建的next指针将front后的指针一个一个的按顺序挪到back指针后，直到front→next==back，而此时的head被挪到了这个子链表的尾部，下个子链表的头部，成为了下个子链表的prehead，将front、back重置为prehead，开始下一次循环。
-
+```c++
     class Solution {
     public:
         ListNode* reverseKGroup(ListNode* head, int k) {
@@ -27,3 +27,4 @@
             return prehead.next;
         }
     };
+```

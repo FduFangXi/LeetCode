@@ -1,7 +1,7 @@
 # Reverse Linked List
 
 普通实现版本
-
+```c++
     class Solution {
     public:
         ListNode* reverseList(ListNode* head) {
@@ -23,9 +23,9 @@
             return head;
         }
     };
-
+```
 优化—用prev和curr来指向当前结点和前驱结点，将上面代码简洁化：
-
+```c++
     class Solution {
     public:
         ListNode* reverseList(ListNode* head) {
@@ -40,9 +40,9 @@
             return prev;
         }
     };
-
+```
 递归的方法—将其看成只有右子树或左子树的树形结构，就可以用递归方法
-
+```c++
     class Solution {
     public:
         ListNode* reverseList(ListNode* head) {
@@ -53,3 +53,4 @@
             head->next = NULL;
         }
     };
+```

@@ -1,5 +1,5 @@
 # swap nodes in pairs
-
+```c++
 class Solution {
     public:
         ListNode* swapPairs(ListNode* head) {
@@ -19,3 +19,4 @@ class Solution {
             return self->next;
         }
     };
+```
